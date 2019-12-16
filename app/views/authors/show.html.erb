@@ -2,3 +2,4 @@
 <% @author.books.each do |book| %>
   <%= book.title %>
 <% end %>
+<%= @author.books.average_page_count %>

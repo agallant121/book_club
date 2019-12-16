@@ -19,6 +19,8 @@ RSpec.describe "Visiting author show page" do
     author_1.books << book_1
     author_1.books << book_2
 
+    visit "/authors/#{author_1.id}"
+
     expect(page).to have_content("300")
   end
 end
