@@ -1,0 +1,8 @@
+<% @books.each do |book| %>
+  <%= book.title %>
+  <%= book.publication_year %>
+  <%= book.pages %>
+  <% book.authors.each do |author| %>
+    <%= link_to author.name, "/authors/#{author.id}" %>
+  <% end %>
+<% end %>
